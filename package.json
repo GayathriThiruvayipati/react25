@@ -1,0 +1,26 @@
+{
+  "name": "namaste",
+  "version": "1.0.0",
+  "description": "This is a React App from scratch.",
+  "homepage": "https://github.com/GayathriThiruvayipati/react25#readme",
+  "bugs": {
+    "url": "https://github.com/GayathriThiruvayipati/react25/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GayathriThiruvayipati/react25.git"
+  },
+  "license": "ISC",
+  "author": "Gayathri",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
