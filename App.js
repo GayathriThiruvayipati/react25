@@ -1,28 +1,22 @@
-/**
- * <div id="parent">
- *      <div id="child">
- *          <h1></h1>
- *          <h2></h2>
- *      </div>
- * </div>
- *
- *  ReactElement(Object) => HTML(Browser Understands)
- */
-
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child", key: "child" }, [
-    React.createElement("h1", { key: "child-h1" }, "I'm h1 tag"),
-    React.createElement("h2", { key: "child-h2" }, "I'm h2 tag"),
-  ]),
-  React.createElement("div", { id: "child1", key: "child1" }, [
-    React.createElement("h1", { key: "child1-h1" }, "I'm h1 tag"),
-    React.createElement("h2", { key: "child1-h2" }, "I'm h2 tag"),
-  ]),
-]);
+// React Element
+const Introduction = () => (
+  <h1 className="header" tabIndex="1">
+    This is gayathri
+  </h1>
+);
+
+// React Functional Component
+const HeadingComponent = () => (
+  <div className="container">
+    <Introduction />
+    {Introduction()}
+    <h1>Hello !</h1>
+  </div>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(parent);
+root.render(<HeadingComponent />);

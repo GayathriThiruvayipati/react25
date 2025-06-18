@@ -21,3 +21,20 @@
 15. HTTPS
 16. Tree Shaking - remove unused code
 17. Different dev and prod bundles
+
+# JSX
+
+- transpiled before it reaches JS Engine by whom? => by PARCEL (does parcel does it on its own? NO) => Babel
+
+- JSX transpiled to => ReactElement(object) => when we render this into the DOM, then it becomes HTML Element.
+
+- Everything in react is a component.
+- what is a component? There are two types of components:
+
+  1. class based components - OLD WAY OF WRITING CODE
+  2. functional components - NEW WAY
+
+- What is React Functional Component? - It is just a normal javascript function which returns JSX Element.
+- Whenever you create a functional component, name it with a capital letter otherwise you get an error. It is a react way of understanding its a component.
+
+- Component Composition - component inside a component is called component composition.
